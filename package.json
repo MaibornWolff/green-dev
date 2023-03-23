@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "green-dev",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -8,11 +8,9 @@
     "serve": "parcel serve --open firefox"
   },
   "devDependencies": {
+    "@parcel/compressor-brotli": "^2.8.3",
+    "@parcel/compressor-gzip": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
     "parcel": "latest"
-  },
-  "dependencies": {
-    "@parcel/compressor-brotli": "^2.8.3",
-    "@parcel/compressor-gzip": "^2.8.3"
   }
 }
