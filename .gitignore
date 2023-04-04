@@ -1,6 +1,8 @@
 #parcel
 .parcel-cache
 dist
+parcel-bundle-reports
 
 #node
 node_modules
+
