@@ -17,20 +17,50 @@
         transform: translate(0,0);
     }
     80% {
-        transform: translate(0, 10rem);
+        transform: translate(0, 30vh);
     }
     100% {
-        transform: translate(8rem, 12rem);
+        transform: translate(0, 60vh);
+    }
+}
+
+@keyframes comet-movement-earth-is-saved {
+    0% {
+        transform: translate(0,0);
+    }
+    95% {
+        transform: translate(0, 60vh);
+    }
+    100% {
+        transform: translate(30vw, 60vh);
+    }
+}
+
+@keyframes rocket-movement {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(-100deg);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(-20vw, -5vh) rotate(-90deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-20vw, -5vh) rotate(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, -80px) rotate(90deg);
     }
 }
 
 .comet{
-    animation: comet-movement 2s linear 0s 1 forwards ;
-    position: relative;
-    top: -2rem;
+    // animation: comet-movement 2s linear 0s 1 forwards ;
+    animation: comet-movement-earth-is-saved 2s linear 0s 1 forwards ;
+    position: absolute;
+    top: -200px;
     left: calc(50% - 5rem);
-    height: 5rem;
-    width: 5rem;
 
     & img {
         transform: rotate(-33deg);
@@ -45,4 +75,15 @@
     width: 5rem;
     clip-path: circle(2.5rem);
     background: radial-gradient(yellow, orange, red);
+}
+
+.rocket {
+    animation: rocket-movement 2s linear 0s 1 forwards ;
+    position: absolute;
+    top: 60vh;
+    width: 80px;
+    height: 80px;
+    left: calc(50vw - 40px);
+    opacity: 0;
+    transform: translate(0, 0) rotate(-90deg);
 }
