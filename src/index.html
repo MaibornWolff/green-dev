@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Doom Day Directive</title>
+    <title>Dooms Day Directive</title>
     <link rel="stylesheet" href="styles.scss" />
   </head>
   <body>
@@ -10,6 +10,9 @@
         <div class="content">
           <div class="animation">
             <div class="sun"></div>
+            <div id="warning">
+              <img src="assets/img/warning.svg" width="200" height="200"/>
+            </div>
             <div class="comet">
               <img src="assets/img/comet.svg" width="200" height="200"/>
             </div>
@@ -21,11 +24,16 @@
             </div>
           </div>
           <div class="interaction">
-            <button>Start!</button>
+            <button id="start">Start!</button>
           </div>
         </div>
         <div class="header"></div>
         <div class="footer"></div>
       </div>
   </body>
+  <script>
+    document.getElementById("start").addEventListener("click", () => {
+      document.getElementById("warning").style.display = "none";
+    }); 
+    </script>
 </html>
