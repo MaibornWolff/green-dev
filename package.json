@@ -5,12 +5,13 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "serve": "parcel serve --open firefox"
+    "serve": "parcel serve --open chrome"
   },
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.8.3",
     "@parcel/compressor-gzip": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "latest"
+    "parcel": "latest",
+    "parcel-bundler": "^1.12.5"
   }
 }
